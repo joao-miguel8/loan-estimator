@@ -1,0 +1,30 @@
+:root {
+    --bg01: #222222;
+    --bg02: #ffffff;
+    --primaryColor01: #222222;
+    --primaryColor02: #ffffff;
+    --accentColor: #1975cd;
+}
+
+.user-inputs-section {
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.estimated-house-value-input {
+    border: 0.5px solid gray;
+    display: flex;
+    padding: 5px;
+    /* max-width: 400px; */
+    width: fit-content;
+    justify-content: space-between;
+    gap: 10px;
+}
+.estimated-house-value-input input {
+    border-style: none;
+}
+
+.estimated-house-value-input input:focus {
+    outline: 0;
+}
