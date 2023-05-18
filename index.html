@@ -13,18 +13,62 @@
         <main>
             <section class="loan-estimator-wrapper">
                 <section class="cost-breakdown-section"></section>
-                <section class="user-inputs-section">
-                    <div class="user-inputs">
-                        <form class="estimated-home-value-form" action="">
-                            <input type="radio" />
-                            <label for="">im selling my house</label>
-                            <div class="estimated-house-value-input">
-                                <label for="">estimated home value</label>
-                                <input class="home-value" type="number" placeholder="$0" />
+                <div class="user-inputs-container">
+                    <form action="">
+                        <!-- input 1 -->
+                        <div class="selling-home-container">
+                            <div class="selling-home-option">
+                                <input type="checkbox" />
+                                <label for="">im selling a new home</label>
                             </div>
-                        </form>
-                    </div>
-                </section>
+                            <div class="home-price-input input_container_styling">
+                                <label for="">estimated home value</label>
+                                <input class="new-home-value" type="number" placeholder="0" />
+                            </div>
+                        </div>
+                        <!-- input 2 -->
+                        <div class="buying-home-container">
+                            <div class="buying-new-home-label-container">
+                                <input type="checkbox" />
+                                <label for="">im buying a new home</label>
+                            </div>
+                            <div class="target-home-price-container input_container_styling">
+                                <label for="">Target home price</label>
+                                <input class="home-price-value" type="number" placeholder="0" />
+                            </div>
+                        </div>
+                        <!-- input 3 -->
+                        <div class="financing-container">
+                            <div class="need-financing-option">
+                                <input class="finance-needed-input" type="checkbox" />
+                                <label for="">I need financing</label>
+                            </div>
+
+                            <!-- input 4 -->
+                            <div class="financing-amounts-section">
+                                <div class="loan-amount-container input_container_styling">
+                                    <label for="">loan amount</label>
+                                    <input class="home-value" type="number" placeholder="0" />
+                                </div>
+
+                                <div class="down-payment-container input_container_styling">
+                                    <label for="">down payment </label>
+                                    <div class="down-payment-inputs">
+                                        <input class="down-payment-amount" type="number" placeholder="0" />
+                                        <input class="down-payment-percent" type="number" placeholder="0%" value="" min="0" max="100" />
+                                    </div>
+                                </div>
+                                <div class="loan-type-container input_container_styling">
+                                    <label for="">loan type </label>
+                                    <select name="" id="">
+                                        <option value="2">2.005%</option>
+                                        <option value="4">4%</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </section>
         </main>
     </body>

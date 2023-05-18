@@ -4,27 +4,130 @@
     --primaryColor01: #222222;
     --primaryColor02: #ffffff;
     --accentColor: #1975cd;
+    --inputBorderColors: #a5a5a5;
+    --placeHolderText: #c2c2c2;
 }
 
-.user-inputs-section {
-    border: 1px solid green;
+/* <<<<<<<<<<<<<<CUSTOM PROPS STYLING>>>>>>>>>>>>>> */
+
+.input_container_styling {
+    border: 0.5px solid var(--inputBorderColors);
     display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.estimated-house-value-input {
-    border: 0.5px solid gray;
-    display: flex;
-    padding: 5px;
-    /* max-width: 400px; */
-    width: fit-content;
+    min-height: 40px;
     justify-content: space-between;
     gap: 10px;
-}
-.estimated-house-value-input input {
-    border-style: none;
+    padding: 0 5px;
+    border-radius: 4px;
 }
 
-.estimated-house-value-input input:focus {
+/* <<<<<<<<<<<<<<GENERAL STYLING>>>>>>>>>>>>>> */
+
+/* INPUT CONTAINER SECTION */
+input,
+select {
+    font-size: 1rem;
+}
+
+input {
+    border-style: none;
+    text-align: right;
+}
+
+input:focus,
+select:focus {
     outline: 0;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::placeholder {
+    color: var(--placeHolderText);
+}
+
+select {
+    border-style: none;
+    min-width: 100px;
+}
+
+label {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+/* <<<<<<<<<<<<<USER INPUTS CONTAINER>>>>>>>>>>>> */
+
+.user-inputs-container {
+    max-width: 360px;
+    margin: 5px auto;
+}
+
+.user-inputs-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* <<<<<<<<<<<<SELLING HOME CONTAINER>>>>>>>>>>> */
+
+.selling-home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-price-input {
+    display: flex;
+    align-items: center;
+}
+
+.selling-home-option {
+    align-self: flex-start;
+}
+
+/* <<<<<<<<<<<<<<BUYING NEW HOME CONTAINER>>>>>>>>>>>> */
+
+.buying-home-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.buying-new-home-option {
+    align-self: flex-start;
+}
+
+.target-home-price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* <<<<<<<<<<<<<FINANCES CONTAINER SECTION>>>>>>>>>>>> */
+
+.financing-amounts-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.need-financing-option {
+    margin: 0 0 12px 0;
+}
+
+.financing-amounts-section label {
+    align-self: center;
+}
+
+.down-payment-inputs {
+    display: flex;
+    gap: 10px;
+}
+.down-payment-inputs input:first-child {
+    max-width: 150px;
+}
+.down-payment-inputs input:last-child {
+    max-width: 150px;
+}
+
+/* <><><><><><><><><><><><><><><><><><><><> */
