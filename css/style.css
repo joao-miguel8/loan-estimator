@@ -5,7 +5,15 @@
     --primaryColor02: #ffffff;
     --accentColor: #1975cd;
     --inputBorderColors: #a5a5a5;
+    --outputBorderColors: #7a7a7a;
     --placeHolderText: #c2c2c2;
+}
+
+/* ..................MAIN WRAPPER............. */
+
+.loan-estimator-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 /* <<<<<<<<<<<<<<CUSTOM PROPS STYLING>>>>>>>>>>>>>> */
@@ -59,10 +67,8 @@ label {
 
 /* <<<<<<<<<<<<<USER INPUTS CONTAINER>>>>>>>>>>>> */
 
-.user-inputs-container {
-    max-width: 360px;
-    margin: 5px auto;
-}
+/* .user-inputs-container {
+} */
 
 .user-inputs-container form {
     display: flex;
@@ -75,6 +81,7 @@ label {
 .selling-home-container {
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 
 .home-price-input {
@@ -91,6 +98,7 @@ label {
 .buying-home-container {
     display: flex;
     flex-direction: column;
+    gap: 6px;
 }
 
 .buying-new-home-option {
@@ -130,4 +138,117 @@ label {
     max-width: 150px;
 }
 
+.submit-button {
+    padding: 14px;
+    border: 1px solid black;
+    background: none;
+    border-radius: 4px;
+}
+
 /* <><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><> */
+/* <><><><><><><><><><><><><><><><><><><><> */
+
+/* COST BREAKDOWN CONTAINER */
+
+/* main container */
+.cost-breakdown-section {
+    background: var(--bg01);
+    padding: 12px;
+}
+.cost-breakdown-section h2 {
+    color: var(--primaryColor02);
+    font-size: 2rem;
+    margin: 0 0 40px 0;
+}
+
+/* ............................... */
+
+/* Section 01 */
+
+.home-sale-wrapper {
+    margin: 0 0 60px 0;
+}
+
+.home-sale-output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 0 20px 0;
+}
+
+.cost-breakdown-section h3 {
+    color: var(--accentColor);
+    font-size: 0.2rem;
+    text-transform: uppercase;
+    margin: 0 0 4px 0;
+}
+
+.cost-breakdown-section h5 {
+    font-size: 1.1rem;
+    color: var(--primaryColor02);
+}
+
+.home-purchase-container,
+.home-sale-output-container span {
+    font-size: 1.1rem;
+    color: var(--primaryColor02);
+}
+
+.final-cost-content,
+.closing-cost-content,
+.monthly-payments-content,
+.sale-net-proceeds-content,
+.home-sale-output-content,
+.total-sale-cost-content {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--outputBorderColors);
+    border-bottom: 1px solid var(--outputBorderColors);
+    padding: 10px 0;
+}
+
+.home-sale-output-content {
+    margin: 4px;
+}
+
+/* Section 02 */
+
+.home-purchase-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.monthly-payments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.total-mortgage-cost-content span {
+    font-size: 0.7rem;
+}
+
+@media (min-width: 600px) {
+    .loan-estimator-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .user-inputs-container,
+    .cost-breakdown-section {
+        padding: 40px;
+    }
+}
+
+/* <<<<<<<<<<<<<< ADDITIONAL STYLING >>>>>>>>>>> */
+
+/* INPUT CONTAINER SECTION: */
+
+.submit-button:hover {
+    background: black;
+    color: white;
+    transition: ease-in-out 0.4s;
+}
